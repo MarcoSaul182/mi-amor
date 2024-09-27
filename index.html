@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/hellomissthang" rel="stylesheet">
+    <link rel="stylesheet" href="lore.css">
+    <title>Feliz cumpleaños mi amor</title>
+    <style>
+       
+        button {
+            margin-top: 20px;
+            padding: 30px 30px; /* Aumentar tamaño del botón */
+            font-size: 50px; /* Aumentar tamaño de la fuente */
+            background-color: white;
+            border: none;
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Transición suave */
+        }
+        button:hover {
+            background-color: #ddd; /* Cambio de color al pasar el mouse */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <video id="backgroundVideo" autoplay preload loop muted>
+            <source src="DELIRIO.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+        <h1>Feliz cumpleaños mi amor</h1>
+        <h1>❤ ❤ ❤ ❤ ❤ ❤</h1>
+        <h1>Te quiero muchisimo</h1>
+        <button id="soundButton">Activar sonido</button>
+    </div>
+    <script>
+        const video = document.getElementById('backgroundVideo');
+        const soundButton = document.getElementById('soundButton');
+
+        // Función para activar el sonido
+        soundButton.addEventListener('click', () => {
+            video.muted = false; // Habilitar sonido
+            video.play(); // Reproducir video
+            soundButton.style.display = 'none'; // Ocultar botón
+        });
+    </script>
+</body>
+
+</html>
